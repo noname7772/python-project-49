@@ -1,19 +1,31 @@
+import prompt
 from random import randint
 
 max_score = 3
-rules = 'Answer "yes" if the number is even, otherwise answer "no".'
+answer_yes = 'yes'
+answer_no = 'no'
 
 
-def is_even(random_number: int):
-    return True if random_number % 2 == 0 else False
+def game_rules():
+    print(f'Answer {answer_yes} if the number is even, otherwise answer {answer_no}.')
 
 
-def run_game():
-    score = 0
-    random_number = randint(0, 100)
-    question = f'Question:{random_number}'
-    while score < max_score:
-        target_result = 'yes' if is_even(random_number) else 'no'
-        score += 1
-    return question, target_result
+def get_answer():
+    return prompt.string('Your answer: ')
+
+
+def ask_question():
+    num = randint(0, 100)
+    print('Question:', num)
+    return num
+
+
+def get_correct_answer(question):
+    global answer_yes, answer_no
+    return answer_yes if is_even_number(question) else answer_no
+
+
+def is_even_number(num):
+    return num % 2 == 0
+
 
