@@ -1,7 +1,6 @@
 import prompt
 from random import randint
 
-max_score = 3
 answer_yes = 'yes'
 answer_no = 'no'
 
