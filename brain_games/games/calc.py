@@ -20,14 +20,13 @@ def ask_question():
 
 def get_correct_answer(question):
     num1, operation, num2 = question
-    return str(is_correct(num1,operation,num2))
+    return str(is_correct(num1, operation, num2))
 
 
 def is_correct(num1, num2, operation):
     if operation == '+':
-        result =  num1 + num2
+        return num1 + num2
     if operation == '-':
-        result = num1 - num2
+        return num1 - num2
     if operation == '*':
-        result = num1 * num2
-    return result
+        return num1 * num2
