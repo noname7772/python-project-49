@@ -23,10 +23,12 @@ def get_correct_answer(question):
     return str(is_correct(num1, operation, num2))
 
 
-def is_correct(num1, num2, operation):
+def is_correct(num1, operation, num2):
     if operation == '+':
         return num1 + num2
     if operation == '-':
         return num1 - num2
     if operation == '*':
         return num1 * num2
+
+
