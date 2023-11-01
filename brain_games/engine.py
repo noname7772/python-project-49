@@ -19,7 +19,7 @@ def run_game(module):
 
 
 def game_over(user_name, answer, correct_answer):
-    print(f'{answer} is wrong answer ;(. Correct answer was {correct_answer})')
+    print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}')")
     print(f"Let's try again, {user_name}!")
 
 

@@ -6,7 +6,7 @@ answer_no = 'no'
 
 
 def game_rules():
-    print(f'Answer {answer_yes} if the number is even, otherwise answer {answer_no}.')
+    print(f'Answer "{answer_yes}" if the number is even, otherwise answer "{answer_no}".')
 
 
 def get_answer():
