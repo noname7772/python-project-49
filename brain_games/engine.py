@@ -33,4 +33,4 @@ def get_answer():
 
 
 def congratulations(user_name):
-    print(f'Congratulations, {user_name}')
+    print(f'Congratulations, {user_name}!')
