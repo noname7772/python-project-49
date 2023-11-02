@@ -35,8 +35,3 @@ def get_correct_answer(question):
     progression, missing_index = question
     missing_number = tuple(progression)[missing_index]
     return str(missing_number)
-
-
-
-
-

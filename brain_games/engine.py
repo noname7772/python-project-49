@@ -10,22 +10,22 @@ def run_game(module):
         question = module.ask_question()
         answer = get_answer()
         if not is_correct_answer(module, question, answer):
-            correct_answer = module.get_correct_answer(question)
-            game_over(user_name, answer, correct_answer)
+            correct = module.get_correct_answer(question)
+            game_over(user_name, answer, correct)
             break
         print('Correct!')
     else:
         congratulations(user_name)
 
 
-def game_over(user_name, answer, correct_answer):
-    print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}')")
+def game_over(user_name, answer, correct):
+    print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct}')")
     print(f"Let's try again, {user_name}!")
 
 
 def is_correct_answer(module, question, answer):
-    correct_answer = module.get_correct_answer(question)
-    return correct_answer == answer
+    correct = module.get_correct_answer(question)
+    return correct == answer
 
 
 def get_answer():
